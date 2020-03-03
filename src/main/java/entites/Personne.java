@@ -4,9 +4,15 @@ public class Personne {
 	// Attribut
 	private String nom;
 	private String premon;
-	private AdressePostale adresse; 
+	private AdressePostale adresse;
 
-
+	// Constructor
+	public Personne(String nom, String premon, AdressePostale adresse) {
+		super();
+		this.nom = nom;
+		this.premon = premon;
+		this.adresse = adresse;
+	}
 
 	// Accesseur
 	public String getNom() {
@@ -24,6 +30,7 @@ public class Personne {
 	public void setPremon(String premon) {
 		this.premon = premon;
 	}
+
 	public AdressePostale getAdresse() {
 		return adresse;
 	}
