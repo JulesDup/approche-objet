@@ -5,18 +5,18 @@ public class CalculerMoyenne {
 	/** tabD : tableau de doubles */
 	double[] tabD = {};
 
-	/**
-	 * Constructeur
-	 * 
-	 * @param tabD
-	 */
-
 //	Constructeur
+	/** Constructeur vide */
 	public CalculerMoyenne() {
 		super();
 	}
 
 //	Methodes
+	/**
+	 * @param d   un double a rajouter
+	 * @param tab tableau qui contiendra l'ajout
+	 * @return tableau avec un double ajouté
+	 */
 	public double[] ajout(double d, double[] tab) {
 		double[] tabPlus = new double[tab.length + 1];
 		for (int i = 0; i < tab.length; i++) {
@@ -26,6 +26,9 @@ public class CalculerMoyenne {
 		return tabPlus;
 	}
 
+	/**
+	 * @param tab tablean a afficher permet affichage d'un tableau dans la console
+	 */
 	public void afficherTableau(double[] tab) {
 		String afficheTab = null;
 		for (int i = 0; i < tab.length; i++) {
@@ -36,7 +39,11 @@ public class CalculerMoyenne {
 
 	}
 
-	double calcule(double tab[]) {
+	/**
+	 * @param tab tableau contenant des doubles
+	 * @return moyenne des doubles du tableau
+	 */
+	public double calcule(double tab[]) {
 		double moyenne = 0;
 		for (int i = 0; i < tab.length; i++) {
 			moyenne += tab[i];

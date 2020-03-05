@@ -22,6 +22,7 @@ public class TestMoyenne {
 			tab = calcmoy.ajout(db, tab);
 		}
 		calcmoy.afficherTableau(tab);
+		System.out.println(calcmoy.calcule(tab));
 
 	}
 
