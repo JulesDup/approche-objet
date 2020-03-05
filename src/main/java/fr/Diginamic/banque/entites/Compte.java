@@ -14,7 +14,7 @@ public class Compte {
 	/** numCompte : */
 	protected String numCompte;
 	/** soldeCompte : */
-	protected int soldeCompte;
+	protected double soldeCompte;
 	/** soldeInitial : */
 	int soldeInitial;
 	/** tabOperation : */
@@ -26,7 +26,7 @@ public class Compte {
 	 * @param numCompte
 	 * @param soldeCompte
 	 */
-	public Compte(String numCompte, int soldeCompte) {
+	public Compte(String numCompte, double soldeCompte) {
 		this.numCompte = numCompte;
 		this.soldeCompte = soldeCompte;
 	}
@@ -58,7 +58,7 @@ public class Compte {
 	 * 
 	 * @return the soldeCompte
 	 */
-	public int getSoldeCompte() {
+	public double getSoldeCompte() {
 		return soldeCompte;
 	}
 
