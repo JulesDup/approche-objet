@@ -21,10 +21,12 @@ public class TestBanque {
 		tableauCompte[0] = compte1;
 		tableauCompte[1] = compteTaux1;
 		System.out.println("-------------------------Tableau de comptes-------------------------");
+		double soldeGlobal = 0.0;
 		for (int i = 0; i < tableauCompte.length; i++) {
 			System.out.println(tableauCompte[i]);
-
+			soldeGlobal += tableauCompte[i].getSoldeCompte();
 		}
+		System.out.println(soldeGlobal);
 	}
 
 }
