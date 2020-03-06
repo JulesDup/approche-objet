@@ -30,7 +30,6 @@ public class TestMaison {
 
 		System.out.println("------------------Test-------------------");
 		maMaison.ajouterPiece(null);
-
 		maMaison.ajouterPiece(new Salon(-20, 0));
 		maMaison.ajouterPiece(new Salon(-20, -1));
 
