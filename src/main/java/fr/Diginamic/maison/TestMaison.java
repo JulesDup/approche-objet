@@ -33,12 +33,13 @@ public class TestMaison {
 		maMaison.ajouterPiece(new Salon(-20, 0));
 		maMaison.ajouterPiece(new Salon(-20, -1));
 
-//		double sup = maMaison.getSuperficieMaison();
-//		System.out.println(sup);
-//		Iterator it = listPiece1.iterator();
-//		while (it.hasNext()) {
-//			System.out.println();
-//		}
+		System.out.println("------------------Test renvoi type-------------------");
+		Salon salon1 = new Salon(20, 0);
+		System.out.println(salon1.getType());
+		System.out.println("------------------Test superficieByPiece-------------------");
+		System.out.println(maMaison.superficieByPiece("Chambre"));
+		System.out.println("------------------Test nbPiece-------------------");
+		System.out.println(maMaison.nbPiece("Chambre"));
 
 	}
 

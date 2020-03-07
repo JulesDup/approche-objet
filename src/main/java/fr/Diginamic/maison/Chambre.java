@@ -7,6 +7,8 @@ public class Chambre extends Piece {
 		// TODO Auto-generated constructor stub
 	}
 
+	public String getType() {
+		return this.getClass().getSimpleName();
+	}
+
 }
-
-

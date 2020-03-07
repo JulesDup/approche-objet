@@ -57,6 +57,34 @@ public class Maison {
 		return supEtage;
 	}
 
+	/**
+	 * @param type de la piece
+	 * @return la somme des superficie des pieces d'un type
+	 */
+	public double superficieByPiece(String type) {
+		double superficiePiece = 0;
+		for (int i = 0; i < tabPieces.length; i++) {
+			if (tabPieces[i].getType().equals(type)) {
+				superficiePiece += tabPieces[i].getSuperficie();
+			}
+		}
+
+		return superficiePiece;
+
+	}
+
+	public int nbPiece(String type) {
+		int nbPiece = 0;
+		for (int i = 0; i < tabPieces.length; i++) {
+			if (tabPieces[i].getType().equals(type)) {
+				nbPiece++;
+			}
+		}
+
+		return nbPiece;
+
+	}
+
 	@Override
 	public String toString() {
 		return "Sperficie de la maison :" + getSuperficieMaison();

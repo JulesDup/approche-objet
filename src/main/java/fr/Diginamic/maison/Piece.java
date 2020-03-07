@@ -58,4 +58,8 @@ public abstract class Piece {
 		this.nbEtage = nbEtage;
 	}
 
+	public String getType() {
+		return this.getClass().getSimpleName();
+	}
+
 }
