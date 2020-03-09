@@ -1,6 +1,6 @@
 package fr.Diginamic.formes;
 
-public class Rectangle extends Forme {
+public class Rectangle extends Forme implements ObjetGeometrique {
 	/** longueur : longueurdu rectange */
 	protected int longueur;
 	/** largeur : largeur du rectangle */
@@ -30,6 +30,12 @@ public class Rectangle extends Forme {
 	@Override
 	public double calculerPerimetre() {
 		return (longueur + largeur) * 2;
+	}
+
+	@Override
+	public String toString() {
+		return "Rectangle [longueur=" + longueur + ", largeur=" + largeur + "]" + "[perimetre ="
+				+ this.calculerPerimetre() + "]" + "[surface =" + this.calculerSurface() + "]";
 	}
 
 }

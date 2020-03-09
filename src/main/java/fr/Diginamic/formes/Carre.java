@@ -15,4 +15,10 @@ public class Carre extends Rectangle {
 		return longueur * 2;
 	}
 
+	@Override
+	public String toString() {
+		return "Carre [longueur=" + longueur + ", Surface =" + calculerSurface() + ", Perimetre =" + calculerPerimetre()
+				+ "]";
+	}
+
 }

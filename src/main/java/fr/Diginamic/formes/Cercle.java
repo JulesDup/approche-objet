@@ -8,7 +8,7 @@ package fr.Diginamic.formes;
  * @author jules
  *
  */
-public class Cercle extends Forme {
+public class Cercle extends Forme implements ObjetGeometrique {
 
 	// Attributs
 	/** rayon : Le rayon du cercle */
