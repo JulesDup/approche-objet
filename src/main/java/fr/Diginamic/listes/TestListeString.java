@@ -73,7 +73,7 @@ public class TestListeString {
 			}
 			listVille.remove(indexVilleMinPop);
 		}
-		Ville maxPop= new;
+		Ville maxPop = new ville();
 		for (int i = 0; i < listVille.size(); i++) {
 			if (listVille.get(i).getNbHab() > 100000) {
 				courante = listVille.get(i).getNom();
