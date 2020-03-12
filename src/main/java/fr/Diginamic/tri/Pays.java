@@ -140,21 +140,21 @@ public class Pays implements Comparable<Pays> {
 	}
 
 // Pour exo 1
-//	@Override
-//	public int compareTo(Pays pays) {
-//		int result = this.nom.compareTo(pays.getNom());
-//		return result;
-//	}
-	// Pour exo 2
 	@Override
 	public int compareTo(Pays pays) {
-		int result = 0;
-		if (this.PIBParHabt < pays.getPIBParHabt()) {
-			result = -1;
-		} else if (this.PIBParHabt > pays.getPIBParHabt())
-			result = 1;
-
+		int result = this.nom.compareTo(pays.getNom());
 		return result;
 	}
+	// Pour exo 2
+//	@Override
+//	public int compareTo(Pays pays) {
+//		int result = 0;
+//		if (this.PIBParHabt < pays.getPIBParHabt()) {
+//			result = -1;
+//		} else if (this.PIBParHabt > pays.getPIBParHabt())
+//			result = 1;
+//
+//		return result;
+//	}
 
 }
